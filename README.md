@@ -14,3 +14,7 @@
 Testing icons: **Circulate:**
 
 Updates!
+
+{% embed url="https://docs.google.com/document/d/1C7ob1lB-zKi0DSC3do9ZVFfXkHlC2xnSDI2yPFAqEY4/preview" %}
+
+{% embed url="https://docs.google.com/presentation/d/1SNuFGwTR6ZzIL2kCMyiKMte3-kNDihRuOtcspSS72d8/edit" %}
