@@ -1,5 +1,19 @@
 # Dan's AI Lesson #1
 
+{% tabs %}
+{% tab title="Resources" %}
+Click tabs to see them
+{% endtab %}
+
+{% tab title="Slides" %}
+{% embed url="https://docs.google.com/presentation/d/1SNuFGwTR6ZzIL2kCMyiKMte3-kNDihRuOtcspSS72d8/edit" %}
+{% endtab %}
+
+{% tab title="Activity Guide" %}
+{% embed url="https://docs.google.com/document/d/1C7ob1lB-zKi0DSC3do9ZVFfXkHlC2xnSDI2yPFAqEY4/preview" %}
+{% endtab %}
+{% endtabs %}
+
 **Display:** Show something
 
 **Vocabulary:** Here's some vocab
@@ -14,7 +28,3 @@
 Testing icons: **Circulate:**
 
 Updates!
-
-{% embed url="https://docs.google.com/document/d/1C7ob1lB-zKi0DSC3do9ZVFfXkHlC2xnSDI2yPFAqEY4/preview" %}
-
-{% embed url="https://docs.google.com/presentation/d/1SNuFGwTR6ZzIL2kCMyiKMte3-kNDihRuOtcspSS72d8/edit" %}
