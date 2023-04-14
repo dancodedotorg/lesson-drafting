@@ -47,7 +47,7 @@ Building blocks:
 
 **Display:** Show slide with additional optical illusions
 
-![](.gitbook/assets/image.png)![](<.gitbook/assets/image (4).png>)![](<.gitbook/assets/image (3).png>)
+![](<.gitbook/assets/image (1).png>)![](<.gitbook/assets/image (4).png>)![](<.gitbook/assets/image (3).png>)
 
 > We use our eyes and sense of sight to identify objects, and sometimes an image with identical features can be interpretted in several different ways. But what about a computer - what would it "see" if it saw one of this pictures? Is the dress gold, or is it blue? Is this a young woman looking away, or an old woman looking down? Are these a bunch of dogs, or a bunch of bagels? Today we're going to talk about how computers can "see" and detect images
 
@@ -70,7 +70,7 @@ Building blocks:
 
 **Display:** Show the slide with a scoreboard from a baseball game
 
-![](<.gitbook/assets/image (2).png>)![](<.gitbook/assets/image (1).png>)
+![](<.gitbook/assets/image (2).png>)![](<.gitbook/assets/image (1) (1).png>)
 
 > We're helping a sports arena make its scoreboard more accessible. We want to train a camera to detect what the scores are so it can be broadcast to a radio receive for people who are visually impaired. For this to work, it needs to detect the which number is displayed on the scoreboard. Each number is represented with one of these displays, which uses 7 segments to create images.
 
@@ -80,6 +80,10 @@ As students are sketching their responses, begin distributing the activity guide
 
 **Distribute:** Pass out the [Computer Vision Network - Activity Guide](https://docs.google.com/document/d/1C7ob1lB-zKi0DSC3do9ZVFfXkHlC2xnSDI2yPFAqEY4/edit)
 
+\[Teaching Tip] **Going Big:** Consider printing out copies of the 7-segment manipulatives and having students work on whiteboards, poster paper, rolls of butcher paper, or even setting down individual items and connecting them with string or yarn.
+
+**Group:** Group students into pairs to work together
+
 **Display:** Show the slides giving an overview of this activity
 
 | Slides                           | Say                                                                                                                                                                      |
@@ -88,8 +92,57 @@ As students are sketching their responses, begin distributing the activity guide
 | ![](.gitbook/assets/slides2.png) | **Say:** The right side of this guide represents the decision we're trying to make. We need to build a path from the inputs on the left to these decisions on the right. |
 | ![](.gitbook/assets/slides3.png) | **Say:** This central area is where you can build your network, just like in the video                                                                                   |
 | ![](.gitbook/assets/slides4.png) | **Say:** You can combine at most 2 inputs from previous layers to create a new combination, like this "corner" combined from two segments                                |
-| ![](.gitbook/assets/slides5.png) | **Say:** You can make as many items in this column as you want! For the first layer, you may end up with a lot of combinations here.                                     |
-| ![](.gitbook/assets/slides6.png) | **Say:**                                                                                                                                                                 |
-| ![](.gitbook/assets/slides7.png) |                                                                                                                                                                          |
-| ![](.gitbook/assets/slides8.png) |                                                                                                                                                                          |
+| ![](.gitbook/assets/slides5.png) | **Say:** You can make as many items in this column as you want! For the first layer, you may end up with a lot of combinations in this column                            |
+| ![](.gitbook/assets/slides6.png) | **Say:** You can combine from previous layers to move into the next layers, creating more complex shaps like this "Top Half"                                             |
+| ![](.gitbook/assets/slides7.png) | **Say:** You can combine from any previous layer, but you can still only use 2 inputs at a time                                                                          |
+| ![](.gitbook/assets/slides8.png) | **Say:** The final layer is special - it can combine up to 3 inputs from any of the previous layers                                                                      |
 
+**Do This:** Have students work in pairs to construct their network. The rules for the network are displayed on the slides.
+
+**Circulate:** Monitor students as they complete this task, observing the different strategies students attempt to "move through" the layers. Ensure partners are collaborating together. Look for groups that are creating unique or novel networks , especially when different from some of the examples in the presentation.
+
+\[Teaching Tip] **Why are they out of order?** Students may ask why the numbers are out of order on the right side of the activity guide. They're ordered by "number of segments" - 8 has the most active segments, and 1 does not. When it comes time to make a decision, if multiple numbers are lit up (like 9 and 7 and 4 and 1), then the top number is always chosen. This helps reduce the complexity for students as they make their algorithms - otherwise, an 8 could cause havoc in their network!
+
+\[Teaching Tip] **Exemplar:** A few example networks are provided as an Answer Keys. These can be used as reference, or to quickly inspire students who may be stuck. They can also be used in class discussions to emphasize that there are multiple ways to solve this task.
+
+**Regroup:** Have students regroup
+
+\[Teaching Tip] **(Optional) Gallery Walk:** Consider having students perform a gallery walk to visit other networks, and have students reflect on how the networks are similar or different from their own. This is an especially engaging activity if students have "Gone Big" and drafted their networks on whiteboards or poster paper.
+
+> Now that we have our algorithm, lets test it! We're going to do 2 examples. I'm going to show a slide that has certain inputs covered with post-it notes. This means the sensor detected that particular strand was lit up. Follow your network to determine which number it is!
+
+**Display:** Display the slide with the first example
+
+\[Teaching Tip] **Use the network, not your eyes:** Students may comment that, once they have the inputs on the left-side, they already know what number it is - they can "figure it out just by looking at it". Remind students that the goal isn't for _**us**_ to figure it out with our eyes and brain, but for a _**computer**_ to figure it our with its sensors and algorithm. You can also ask students to consider all of the steps that happened in nanoseconds once they saw these inputs - their brain needed to combine all of this information together to know what number it was. This network is doing the same thing, acting like the computer's "brain" to make a decision once it sees the inputs.
+
+**Circulate:** Monitor students as they trace the path in their network
+
+**Prompt:** _Are there any changes you want to make to your network? You have a minute to do so!_
+
+**Display:** Show the slide with the second example
+
+\[Teaching Tip] **Optional Extensions:**
+
+* Consider having students trade networks with another pair, then giving students a third example and seeing if they can trace a neighbor's network
+* Consider inviting students to trace the solution in front of the class, explaining how their network works
+* Consider giving students the number 8 as an input, which will activate every single space in their network, then prompt them to consider how they can make a decision when this happens
+
+### Wrap Up (5 mins)
+
+**(Option 1) Prompt:** _How would you adapt your network to work with a 14-segment display? What would need to change?_
+
+![](<.gitbook/assets/image (6).png>)
+
+**(Option 2) Prompt:** _Imagine one of the segments is burnt out so the following image is displayed. What number do you think it is? What number will your network say it is?_
+
+![](.gitbook/assets/broken.png)
+
+**Discussion Goal:** Could be 3 or 9
+
+**(Option 3) Prompt:** What do you imagine a network could look like that could identify the image below? What do the inputs look like? What do some of the middle layers look like?
+
+![](.gitbook/assets/image.png)
+
+**(Optional) Extension:** Consider watching the What a Neural Network Sees video from the [Experiments with Google](https://experiments.withgoogle.com/what-neural-nets-see) page. The short video gives a live example of how image classification works as a neural network, where you can see the inputs and hidden layers.
+
+{% embed url="https://www.youtube.com/watch?v=Gu0MkmynWkw" %}
