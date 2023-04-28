@@ -35,7 +35,7 @@ Building blocks:
 
 **Display:** Show the image on the slide to students.
 
-![](<.gitbook/assets/image (5).png>)
+![](<.gitbook/assets/image (5) (1).png>)
 
 **Prompt:** _What animal do you see in this image? Write your answer on a sheet of paper_
 
@@ -70,7 +70,7 @@ Building blocks:
 
 **Display:** Show the slide with a scoreboard from a baseball game
 
-![](<.gitbook/assets/image (2).png>)![](<.gitbook/assets/image (1) (1).png>)
+![](<.gitbook/assets/image (2) (1).png>)![](<.gitbook/assets/image (1) (1).png>)
 
 > We're helping a sports arena make its scoreboard more accessible. We want to train a camera to detect what the scores are so it can be broadcast to a radio receive for people who are visually impaired. For this to work, it needs to detect the which number is displayed on the scoreboard. Each number is represented with one of these displays, which uses 7 segments to create images.
 
@@ -131,7 +131,7 @@ As students are sketching their responses, begin distributing the activity guide
 
 **(Option 1) Prompt:** _How would you adapt your network to work with a 14-segment display? What would need to change?_
 
-![](<.gitbook/assets/image (6).png>)
+![](<.gitbook/assets/image (6) (1).png>)
 
 **(Option 2) Prompt:** _Imagine one of the segments is burnt out so the following image is displayed. What number do you think it is? What number will your network say it is?_
 
@@ -141,7 +141,7 @@ As students are sketching their responses, begin distributing the activity guide
 
 **(Option 3) Prompt:** What do you imagine a network could look like that could identify the image below? What do the inputs look like? What do some of the middle layers look like?
 
-![](.gitbook/assets/image.png)
+![](<.gitbook/assets/image (6).png>)
 
 **(Optional) Extension:** Consider watching the What a Neural Network Sees video from the [Experiments with Google](https://experiments.withgoogle.com/what-neural-nets-see) page. The short video gives a live example of how image classification works as a neural network, where you can see the inputs and hidden layers.
 
