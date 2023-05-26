@@ -4,7 +4,7 @@
 {% tab title="Resources" %}
 Building blocks:
 
-```
+```markup
 <i class="fa fa-pencil" aria-hidden="true"></i> **Vocabulary:** 
 <i class="fa fa-refresh" aria-hidden="true"></i> **Circulate:** 
 <i class="fa fa-file-text-o" aria-hidden="true"></i> **Distribute:** 
